@@ -1,0 +1,1 @@
+export const selectUserQuery = "SELECT id, email, created_at, username, full_name, (SELECT COUNT(*) FROM posts WHERE user_id = users.id) AS posts_count FROM users WHERE id = ?"
